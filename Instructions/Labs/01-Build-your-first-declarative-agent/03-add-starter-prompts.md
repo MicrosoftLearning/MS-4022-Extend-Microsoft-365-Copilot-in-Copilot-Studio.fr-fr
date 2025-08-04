@@ -33,16 +33,16 @@ Dans Copilot Studio :
 Nous allons publier l’agent mis à jour sur Microsoft 365 Copilot.
 
 1. Sélectionnez **Publier** en haut à droite de la page de vue d’ensemble de votre agent dans Copilot Studio.
-2. Dans la fenêtre modale qui s’ouvre, sélectionnez **Publier**.
-3. Dans la fenêtre **Options de disponibilité** qui s’ouvre, sélectionnez **Copier** sous l’en-tête **Lien de partage**.
-4. Dans un autre onglet de votre navigateur web, **collez** le lien de partage de votre agent, puis sélectionnez **Entrée**. Une fenêtre s’affiche décrivant l’agent **Support technique**.
-5. Sélectionnez **Mettre à jour maintenant** sous le nom de l’agent pour publier les modifications apportées à l’agent Support produit. Patientez quelques instants pendant la mise à jour de l’agent.
-6. Une fois la mise à jour terminée, fermez la fenêtre modale. Si vous n’êtes pas redirigé vers Microsoft 365 Copilot dans votre navigateur, sélectionnez **Copilot** dans le menu de gauche ou dans le menu **Applications** du portail Microsoft 365.
+1. Dans la fenêtre modale qui s’ouvre, sélectionnez **Publier**.
+1. Dans la fenêtre **Options de disponibilité** qui s’ouvre, sélectionnez **Copier** sous l’en-tête **Lien de partage**.
+1. Dans un autre onglet de votre navigateur web, **collez** le lien de partage de votre agent, puis sélectionnez **Entrée**. Une fenêtre s’affiche décrivant l’agent **Support technique**.
+1. Sélectionnez **Mettre à jour maintenant** sous le nom de l’agent pour publier les modifications apportées à l’agent Support produit. Patientez quelques instants pendant la mise à jour de l’agent.
+1. Une fois la mise à jour terminée, fermez la fenêtre modale. Si vous n’êtes pas redirigé vers Microsoft 365 Copilot dans votre navigateur, sélectionnez **Copilot** dans le menu de gauche ou dans le menu **Applications** du portail Microsoft 365.
 
 ## Tester votre agent dans Microsoft 365 Copilot
 
 1. Dans **Microsoft 365 Copilot**, sélectionnez l’icône en haut à droite pour **développer le panneau latéral de Copilot**.
-2. Recherchez **Support technique** dans la liste des agents et sélectionnez-le pour entrer dans l’expérience immersive afin de discuter directement avec l’agent. Vous noterez que les invites de démarrage que vous avez définies dans Copliot Studio s’affichent dans l’interface utilisateur.
+1. Recherchez **Support technique** dans la liste des agents et sélectionnez-le pour entrer dans l’expérience immersive afin de discuter directement avec l’agent. Vous noterez que les invites de démarrage que vous avez définies dans Copilot Studio s’affichent dans l’interface utilisateur.
 
     ![Capture d’écran de Microsoft 365 Copilot dans Microsoft Edge montrant les invites de démarrage de l’agent Support technique.](../Media/product-support-starter-prompts.png)
-3. **Sélectionnez** une invite de démarrage et vérifiez la réponse.
+1. **Sélectionnez** une invite de démarrage et vérifiez la réponse.
