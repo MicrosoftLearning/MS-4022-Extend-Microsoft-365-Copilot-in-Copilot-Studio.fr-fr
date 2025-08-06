@@ -70,15 +70,19 @@ Ajoutez l’URL SharePoint à votre agent comme source de connaissances d’ancr
 
 ### Ajouter une URL SharePoint
 
-1. Dans la page de vue d’ensemble de votre agent Support produit dans Copilot Studio, sélectionnez **Ajouter des connaissances** dans la section **Connaissances**.
+1. Dans un navigateur web, accédez à [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) à l’adresse `https://copilotstudio.microsoft.com`.
+1. Sélectionnez **Agents**.
+1. Sélectionnez **Copilot pour Microsoft 365**.
+1. Sélectionnez votre agent **d'assistance produit**.
+1. Dans la section **Connaissances** de la page de présentation de l'agent, sélectionnez **Ajouter des connaissances**.
 
     ![Capture d’écran de Copilot Studio dans Microsoft Edge mettant en évidence le bouton Ajouter des connaissances pour l’agent Support technique.](../Media/product-support-add-knowledge.png)
 
-2. Sur la page **Ajouter une connaissance** de l’Assistant qui s’ouvre, sélectionnez **SharePoint**.
-3. Dans la zone de texte, collez l’URL de votre bibliothèque SharePoint **Produits**, puis sélectionnez **Ajouter**. L’URL doit se présenter sous la forme `https://DOMAIN.sharepoint.com/sites/ProductSupport/Products`.
+1. Sur la page **Ajouter une connaissance** de l’Assistant qui s’ouvre, sélectionnez **SharePoint**.
+1. Dans la zone de texte, collez l’URL de votre bibliothèque SharePoint **Produits**, puis sélectionnez **Ajouter**. L’URL doit se présenter sous la forme `https://DOMAIN.sharepoint.com/sites/ProductSupport/Products`.
 
-4. Sélectionnez **Ajouter** dans la fenêtre **Ajouter SharePoint**, puis attendez que la source de connaissances soit ajoutée à l’agent. Cela peut prendre une à deux minutes.
-5. Vous noterez que la bibliothèque **Produits** est répertoriée sous la section **Connaissances** des informations de vue d’ensemble de l’agent.
+1. Sélectionnez **Ajouter** dans la fenêtre **Ajouter SharePoint**, puis attendez que la source de connaissances soit ajoutée à l’agent. Cela peut prendre une à deux minutes.
+1. Vous noterez que la bibliothèque **Produits** est répertoriée sous la section **Connaissances** des informations de vue d’ensemble de l’agent.
 
 > **Remarque** : les agents Copilot Studio accèdent aux documents pour le compte de l’utilisateur. Votre agent pourra uniquement obtenir des réponses et du contenu à partir de documents auxquels vos utilisateurs finaux ont accès.
 

@@ -117,7 +117,7 @@ Si vous avez suivi les étapes précédentes, vous êtes actuellement dans l’e
 
 Continuons dans le navigateur et testons l’expérience **contextuelle**.
 
-1. Au-dessus du volet **Agents**, à droite de la fenêtre de conversation, sélectionnez **Copilot** pour quitter votre conversation immersive avec l’agent **Support technique** et discuter avec Microsoft 365 Copilot.
+1. Au-dessus du volet **Agents** dans la barre latérale, sélectionnez **conversation instantanée** ou **M365 Copilot** pour quitter votre conversation immersive avec l'agent du **support produit** et discuter avec Microsoft 365 Copilot.
 
     ![Capture d’écran du bouton Copilot dans la barre latérale de Microsoft 365 Copilot.](../Media/select-copilot.png)
 
