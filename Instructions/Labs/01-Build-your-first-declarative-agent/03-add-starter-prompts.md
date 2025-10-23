@@ -3,21 +3,21 @@ lab:
   title: "1.3\_: ajouter des invites de démarrage"
 ---
 
-# Ajouter des invites de démarrage
+# Ajouter des invites suggérées
 
-Dans cet exercice, vous allez mettre à jour l’agent déclaratif que vous avez créé dans l’exercice précédent avec six invites de démarrage.
+Dans cet exercice, vous allez mettre à jour l’agent déclaratif que vous avez créé dans l’exercice précédent avec six invites suggérées.
 
 Vous devriez terminer cet exercice en **10** minutes environ.
 
-## Définir des invites de démarrage
+## Définir des invites suggérées
 
 Dans Copilot Studio :
 
 1. Accédez à la page **Vue d’ensemble** de votre agent **Support technique**.
-1. Dans la section **Invites de démarrage**, sélectionnez **Modifier**.
-1. Ajoutez les six invites de démarrage suivantes :
+1. Dans la section **Invites suggérées**, sélectionnez **Ajouter des invites suggérées**.
+1. Ajoutez les invites suivantes :
 
-      | Titre                  | Détails                                              |
+      | Titre                  | Prompt                                              |
       |------------------------|--------------------------------------------------|
       | Informations sur le produit    | Parle-moi d’Eagle Air                          |
       | Politique de retour         | Quelle est la politique de retour ?                      |
@@ -42,7 +42,7 @@ Nous allons publier l’agent mis à jour sur Microsoft 365 Copilot.
 ## Tester votre agent dans Microsoft 365 Copilot
 
 1. Dans **Microsoft 365 Copilot**, sélectionnez l’icône en haut à droite pour **développer le panneau latéral de Copilot**.
-1. Recherchez **Support technique** dans la liste des agents et sélectionnez-le pour entrer dans l’expérience immersive afin de discuter directement avec l’agent. Vous noterez que les invites de démarrage que vous avez définies dans Copilot Studio s’affichent dans l’interface utilisateur.
+1. Recherchez **Support technique** dans la liste des agents et sélectionnez-le pour entrer dans l’expérience immersive afin de discuter directement avec l’agent. Notez que les invites suggérées que vous avez définies dans Copilot Studio s’affichent dans l’interface utilisateur.
 
     ![Capture d’écran de Microsoft 365 Copilot dans Microsoft Edge montrant les invites de démarrage de l’agent Support technique.](../Media/product-support-starter-prompts.png)
-1. **Sélectionnez** une invite de démarrage et vérifiez la réponse.
+1. **Sélectionnez** une invite suggérée et passez en revue la réponse.

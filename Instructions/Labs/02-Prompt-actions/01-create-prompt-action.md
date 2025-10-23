@@ -13,7 +13,8 @@ Vous devriez terminer cet exercice en **15** minutes environ.
 
 1. Ouvrez Copilot Studio dans votre navigateur web en accédant à [Copilot Studio](https://copilotstudio.microsoft.com) à l’adresse `https://copilotstudio.microsoft.com`.
 1. Sélectionnez **Outils** dans le menu de navigation à gauche.
-1. Sélectionnez **Créer nouveau**, puis sélectionnez **Invite**. Vous êtes redirigé vers l'interface utilisateur du générateur de messages.
+1. Sélectionnez **Nouvel outil**.
+1. Dans la fenêtre contextuelle Nouvel outil, sélectionnez **Invite**. Vous accédez à l’interface utilisateur du générateur d’invites.
 1. Dans la zone de texte **Instructions**, entrez `Create a marketing pitch for a product based on a `.
 1. Placez votre curseur à la fin de la phrase que vous avez entrée, puis sélectionnez **Ajouter du contenu**.
 1. Sélectionnez **Texte**.
@@ -64,29 +65,10 @@ Si vous avez terminé le labo précédent et créé un agent déclaratif, vous p
 1. Sélectionnez l’invite **Créer un pitch marketing Contoso**.
 1. Sélectionnez **Ajouter à l’agent**. L’outil est maintenant répertorié dans les **outils** de l’agent de support technique.
 
-### Configurez l’outil d’invite
-
-1. Dans la section **Outils** de la page vue d’ensemble de l’agent, sélectionnez l’outil `Contoso Marketing Pitch`. Vous êtes redirigé vers une page permettant de configurer les propriétés et les paramètres de l'outil.
-1. Sélectionnez **Entrées** dans la navigation supérieure dans l’action.
-1. Sous **Entrées supplémentaires**, sélectionnez **Ajouter**.
-1. Sélectionnez la variable **Draft** (Brouillon). Un formulaire s’affiche.
-1. Vérifiez que le champ **Comment l’agent remplira-t-il cette entrée ?** est défini sur **Remplir de manière dynamique avec la meilleure option (par défaut)**.
-1. Dans le champ **Nom d’affichage**, tapez `Initial draft`.
-1. Vérifiez que le champ **Identifier en tant que** est défini sur **Réponse complète de l’utilisateur**.
-1. Sélectionnez **Enregistrer** en haut à droite de la fenêtre.
-
 ### Mettez à jour les instructions de l’agent
 
 Mettez à jour les instructions de l’agent pour fournir des conseils sur l’utilisation de l’invite.
 
 1. Dans la zone de texte **Instructions**, ajoutez ce qui suit au texte d’instructions existant : `Use the Contoso Marketing Pitch action to help marketing stakeholders craft pitches for products based on their draft ideas.`
 
-## (Facultatif) Testez une action d’invite dans Copilot Studio
-
-Ensuite, testez l'agent à l'aide de l'outil de prompt dans Copilot Studio.
-
-1. À partir du volet **Tester votre agent** dans la page de vue d’ensemble de votre agent dans Copilot Studio, sélectionnez le bouton **Actualiser** pour actualiser le volet de test et charger les dernières modifications de votre agent.
-1. Dans la zone de texte de la conversation test, entrez `Create a Contoso marketing pitch based on the following draft: "Bouncy ball is the hottest product on the market for both youth and adults. It's durable and the largest of its kind."`, puis envoyez le message.
-1. Vérifiez la réponse et notez que l'agent suit les instructions que vous avez fournies dans les instructions de l'invite personnalisée.
-
-Vous avez terminé l'exercice et validé le fonctionnement de votre outil d'invite.
+Vous avez terminé l’exercice et créé un outil d’invite pour votre agent.
