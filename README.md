@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 30th December 2025.** 
+
 # Labos : étendre Microsoft 365 Copilot avec Copilot Studio
 
 Ce dépôt contient des exercices et des fichiers de prise en charge pour le cours de compétences Microsoft **MS-4022 : étendre Microsoft 365 Copilot avec Copilot Studio**.
