@@ -35,22 +35,27 @@ Commencez par créer un agent déclaratif dans Copilot Studio. Utilisez l’IA 
     I'd like to create a product support agent that answers questions related to Contoso Electronics products.
     ```
 
-1. Sélectionnez **entrer** ou **envoyer** pour envoyer votre message.
-1. Si vous êtes invité à suggérer un nom pour votre assistant, entrez `Product support` et envoyez votre message.
-1. Sélectionnez **Ignorer pour configurer** en haut de l’interface conversationnelle pour afficher la page de vue d’ensemble de l’agent et passer en revue ce que l’IA générative a configuré jusqu’à présent.
+1. Sélectionnez **entrer** ou **envoyer** pour envoyer votre message. L’Assistant commence à configurer votre assistant.
+1. Si vous êtes invité à suggérer un nom pour votre assistant, entrez `Product support` et envoyez votre message. L’Assistant met à jour le nom de l’assistant.
+1. L’Assistant vous demandera plus d’informations sur l’assistant. Au lieu de répondre, sélectionnez **Passer à la configuration** en haut de l’interface conversationnelle pour afficher la page de présentation de l’assistant et passer en revue ce que l’IA générative a configuré jusqu’à présent.
+![Capture d’écran de l’interface conversationnelle pour la création d’assistants, mettant en évidence le bouton Passer à la configuration.](../Media/skip-to-configure-agent.png)
 
 ## Configurer l’agent et définir des instructions
 
-Ensuite, mettez à jour les propriétés et les métadonnées de l’agent manuellement.
+Ensuite, mettez à jour manuellement les propriétés et les métadonnées de l’assistant afin de garantir la cohérence des résultats pour cet exercice.
 
-1. Passez en revue le **nom** défini par l’Assistant d’IA générative pour votre agent. Mettez à jour le nom vers `Product support`.
-1. Mettez à jour la valeur de la propriété **description** sur `A product support agent that can answer queries about Contoso Electronics products`.
-1. Dans la zone de texte **Instructions**, entrez :
+1. Passez en revue le **nom** défini par l’Assistant d’IA générative pour votre agent. Mettez à jour le nom, si nécessaire, pour qu’il soit `Product support`.
+1. Passez en revue la propriété **description** et mettez-la à jour pour qu’elle soit  `A product support agent that can answer queries about Contoso Electronics products`.
+1. Dans la zone de texte **Instructions**, remplacez toutes les instructions existantes par les suivantes :
   
     ```md
-        You are an agent tasked with answering questions about Contoso Electronics products. Start every response to the user with "Thanks for using a Copilot agent!\n\n" and then answer the questions and help the user.
+        - You are an agent tasked with answering questions about Contoso Electronics products.
+        - Start every response to the user with "Thanks for using a Copilot agent!\n\n" and then answer the questions and help the user.
+        - Do not answer questions unrelated to Contoso Electronics products.
+        - Maintain a helpful and approachable tone throughout interactions.
     ```
 
+1. Notez que les prompts suggérés ont été générés à l’aide de l’IA générative. Vous mettrez à jour ces prompts dans un prochain exercice.
 1. Sélectionnez le bouton **Créer** en haut de la page pour créer l’agent.  Après quelques instants, vous êtes redirigé vers la page de vue d’ensemble de l’agent.
 
 ## Tester l’agent dans Copilot Studio
@@ -62,28 +67,29 @@ Ensuite, testez le comportement de votre agent dans le volet de test dans Copilo
     ![Capture d’écran de la page de l’agent Support technique avant la publication.](../Media/product-support-publish-details.png)
 
 1. Si le volet **Tester votre agent** n’est pas affiché à droite des informations de vue d’ensemble de l’agent, sélectionnez le bouton **Tester** en regard du bouton Publier pour ouvrir le volet de test.
-1. Dans la zone de texte, entrez `What can you do?` et envoyez votre message.
+1. Dans la zone de texte du volet de test, entrez `What can you do?` et envoyez votre message.
 1. Attendez la réponse. Notez comment la réponse commence par le texte « Merci d’utiliser un agent Copilot ! » comme indiqué dans les instructions que vous avez définies pour l’agent précédemment.
 
     ![Capture d’écran de la conversation du volet de test avec l’agent Support technique.](../Media/product-support-test-pane-1.png)
 
-    Vous noterez également que l’agent a actuellement des instructions, mais qu’il n’a pas encore de sources de connaissances ou d’actions personnalisées. Vous n’avez pas encore configuré l’agent pour répondre aux questions sur les produits Contoso. Vous verrez cela dans le prochain exercice.
+    Vous noterez également que l’agent a actuellement des instructions, mais qu’il n’a pas encore de sources de connaissances ou d’actions personnalisées. Vous n’avez pas encore configuré l’assistant pour qu’il puisse répondre avec précision aux questions sur les produits Contoso. Vous verrez cela dans le prochain exercice.
 
     > [!NOTE]
-    > Si vous devez modifier votre agent, fermez le volet de test et sélectionnez **Modifier** dans la section **Détails** de la page de vue d’ensemble de l’agent. Avant de tester à nouveau, sélectionnez le bouton **Actualiser** à l’intérieur du volet de test pour charger les dernières modifications.
+    > Si vous devez modifier votre assistant, sélectionnez **modifier** dans la section **Détails** de la page de présentation de l’assistant. Enregistrez les changements apportés. Avant de refaire le test, sélectionnez le bouton **Démarrer une nouvelle session de test** dans le volet de test.
 
 ## Publier l’agent sur Microsoft 365 Copilot
 
-Ensuite, publiez votre agent déclaratif sur Microsoft 365 Copilot. Dans la page de vue d’ensemble de l’agent **Support technique** :
+Ensuite, publiez votre assistant dans Microsoft 365 Copilot. Dans la page de vue d’ensemble de l’agent **Support technique** :
 
 1. Cliquez sur le bouton **Publier**. Vous êtes invité à entrer des informations sur votre agent qui seront visibles pour les utilisateurs dans Microsoft 365 Copilot et Microsoft Teams.
 
     > [!NOTE]
     > Les informations de ce formulaire sont utilisées pour remplir l’entrée de catalogue dans les catalogues Office et Teams de votre organisation et la liste des applications intégrées du Centre d’administration Microsoft. Elles ne sont pas utilisées par le modèle de langage Microsoft 365 Copilot pour appeler votre agent.
 
-1. Dans la zone de texte **Description courte**, entrez `Answers questions about Contoso Electronics products`.
+1. Dans la zone de texte **Brève description**, entrez `Answers questions about Contoso Electronics products`, en remplaçant le contenu généré automatiquement.
 1. Acceptez les suggestions par défaut pour les champs restants.
 1. Sélectionnez **Publier**.
+    ![Capture d’écran de la fenêtre Publier l’assistant avant de sélectionner le bouton Publier.](../Media/publish-window.png)
 1. Patientez jusqu’à ce que les agents soient publiés.  Ne fermez pas la fenêtre modale pendant la publication. Cela peut prendre quelques minutes.
 
     > [!NOTE]
@@ -91,6 +97,7 @@ Ensuite, publiez votre agent déclaratif sur Microsoft 365 Copilot. Dans la pa
 
 1. Une fois l’agent publié, la fenêtre **Options de disponibilité** s’affiche.
 1. Sous **Lien de partage**, sélectionnez **Copier** pour copier le lien de partage de votre agent, puis sélectionnez **Terminé**.
+    ![Capture d’écran de la fenêtre Options de disponibilité mettant en évidence le bouton Copier.](../Media/share-link-copy.png)
 1. Vous noterez que la section **Détails de publication** de la page de vue d’ensemble de votre agent indique que l’agent a été publié.
 
     ![Capture d’écran de la section des détails de publication de l’agent de support technique dans Copilot Studio.](../Media/publish-details.png)
@@ -106,9 +113,9 @@ Ensuite, publiez votre agent déclaratif sur Microsoft 365 Copilot. Dans la pa
 
 ## Tester l’agent déclaratif dans Microsoft 365 Copilot
 
-Ensuite, nous allons exécuter l’agent déclaratif dans Microsoft 365 Copilot et valider ses fonctionnalités dans les expériences **contextuelles** et **immersives**.
+Ensuite, testons l’assistant dans Microsoft 365 Copilot et validons son fonctionnement dans les expériences **immersive** et **en contexte**.
 
-Si vous avez suivi les étapes précédentes, vous êtes actuellement dans l’expérience de l’agent **immersif**. Vous noterez dans le volet **Agents**, à droite, que **Support technique** est sélectionné en tant qu’agent avec lequel vous discutez directement.
+Si vous avez suivi les étapes précédentes, vous êtes actuellement dans l’expérience de l’agent **immersif**. Remarquez dans la section **Assistants** du volet situé à côté de l’interface de conversation que **Support produit** est sélectionné comme l’assistant avec lequel vous discutez actuellement directement.
 
 ![Capture d’écran de l’expérience immersive avec l’agent Support technique dans Microsoft 365 Copilot.](../Media/product-support-immersive.png)
 
@@ -117,7 +124,7 @@ Si vous avez suivi les étapes précédentes, vous êtes actuellement dans l’e
 
 Continuons dans le navigateur et testons l’expérience **contextuelle**.
 
-1. Au-dessus du volet **Agents** dans la barre latérale, sélectionnez **conversation instantanée** ou **M365 Copilot** pour quitter votre conversation immersive avec l'agent du **support produit** et discuter avec Microsoft 365 Copilot.
+1. Au-dessus du volet **Assistants** dans la barre latérale, sélectionnez **Nouvelle conversation** pour démarrer une nouvelle conversation avec Microsoft 365 Copilot, en quittant votre conversation immersive avec l’assistant **Support produit**.
 
     ![Capture d’écran du bouton Copilot dans la barre latérale de Microsoft 365 Copilot.](../Media/select-copilot.png)
 
@@ -125,7 +132,7 @@ Continuons dans le navigateur et testons l’expérience **contextuelle**.
 
     ![Capture d’écran du menu volant des agents dans Microsoft 365 Copilot dans Microsoft Edge.](../Media/copilot-agents-flyout.png)
 
-1. Dans le menu volant, sélectionnez **Support technique**. Notez le message d’état au-dessus de la zone de message. Il affiche **Conversation avec le support technique**, ce qui signifie que vous utilisez l’expérience contextuelle de l’agent.
+1. Dans le menu volant, sélectionnez **Support produit**. Notez le message d’état au-dessus de la zone de message. **Discussion avec le support produit** s’affiche. Vous discutez maintenant avec votre assistant Support produit **en contexte**dans une conversation avec Copilot, ce qui signifie que votre assistant peut tenir compte du contexte de votre conversation avec Copilot.
 
     ![Capture d’écran de Microsoft 365 Copilot dans Microsoft Edge. Le message d’état « Conversation avec le support technique » est mis en surbrillance.](../Media/product-support-in-context.png)
 
@@ -133,7 +140,7 @@ Continuons dans le navigateur et testons l’expérience **contextuelle**.
 
 1. Attendez la réponse. Vous noterez que la réponse commence par le texte « Merci pour votre question ! » conformément aux instructions que vous avez fournies pour l’agent.
 
-1. Pour quitter l’expérience contextuelle, sélectionnez la croix (X) dans le message d’état. Notez que le message d’état est supprimé et qu’un message s’affiche dans la fenêtre de conversation qui indique que vous ne discutez plus avec l’agent.
+1. Pour quitter l’expérience contextuelle, sélectionnez la croix (X) dans le message d’état. Notez que le message d’état a été supprimé et qu’un message s’affiche dans la fenêtre de conversation pour indiquer que vous ne discutez plus avec l’assistant Support produit. Vous pouvez continuer la conversation directement avec Copilot.
 
     ![Capture d’écran de Microsoft 365 Copilot dans Microsoft Edge. L’icône de croix dans le message d’état de l’agent est mise en surbrillance.](../Media/exit-in-context-experience.png)
 
